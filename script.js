@@ -1,3 +1,4 @@
-document.getElementById('theme-toggle').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Message Sent!");
 });
