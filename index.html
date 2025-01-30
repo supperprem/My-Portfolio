@@ -3,76 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prem Patel - Portfolio</title>
+    <title>Professional Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="Your Photo">
+                <h2>Your Name</h2>
+                <p>Web Developer</p>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <a href="cv.pdf" download class="btn">Download CV</a>
+            </div>
+        </aside>
 
-    <!-- Navigation Bar -->
-    <header>
-        <h1>Prem Patel</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button id="theme-toggle">Toggle Dark Mode</button>
-    </header>
+        <!-- Main Content -->
+        <main class="content">
+            <section>
+                <h1>About Me</h1>
+                <p>Passionate web developer with expertise in front-end and back-end technologies.</p>
+            </section>
+            
+            <section>
+                <h1>Skills</h1>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, Vue.js</li>
+                    <li>Python, Django, Flask</li>
+                    <li>SQL, MongoDB</li>
+                </ul>
+            </section>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Data Analyst | Python Developer | Compliance Enthusiast</p>
-        <a href="PremJan25.pdf" download class="btn">Download CV</a>
-    </section>
+            <section>
+                <h1>Experience</h1>
+                <p><strong>Company Name</strong> - Web Developer (2022 - Present)</p>
+                <p>Worked on various web projects, optimizing UI and improving functionality.</p>
+            </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a committed and detail-oriented professional with experience in data analysis, data processing, and warehouse operations.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <span>Python (Pandas, NumPy, Seaborn)</span>
-            <span>Data Analysis & Visualisation</span>
-            <span>SQL & Database Management</span>
-            <span>Microsoft Office</span>
-            <span>Search Engine Optimization (SEO)</span>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Senior Data Processing Specialist - NielsenIQ</h3>
-            <p>Managed data processing tasks and workforce operations across Denmark, Sweden, and Spain.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2025 Prem Patel. All rights reserved.</p>
-    </footer>
-
+            <section>
+                <h1>Contact</h1>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
