@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prem Patel - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -16,10 +17,12 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button id="theme-toggle">Toggle Dark Mode</button>
     </header>
 
     <!-- Home Section -->
@@ -32,20 +35,19 @@
     <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a committed and detail-oriented professional with experience in data analysis, data processing, and warehouse operations. I enjoy working with Python, SQL, and data visualisation tools to extract insights and drive decision-making.</p>
+        <p>I am a committed and detail-oriented professional with experience in data analysis, data processing, and warehouse operations.</p>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Python (Pandas, NumPy, Seaborn)</li>
-            <li>Data Analysis & Visualisation</li>
-            <li>SQL & Database Management</li>
-            <li>Microsoft Office</li>
-            <li>Search Engine Optimization (SEO)</li>
-            <li>Time Management & Documentation Review</li>
-        </ul>
+        <div class="skills-grid">
+            <span>Python (Pandas, NumPy, Seaborn)</span>
+            <span>Data Analysis & Visualisation</span>
+            <span>SQL & Database Management</span>
+            <span>Microsoft Office</span>
+            <span>Search Engine Optimization (SEO)</span>
+        </div>
     </section>
 
     <!-- Experience Section -->
@@ -55,23 +57,17 @@
             <h3>Senior Data Processing Specialist - NielsenIQ</h3>
             <p>Managed data processing tasks and workforce operations across Denmark, Sweden, and Spain.</p>
         </div>
-        <div class="job">
-            <h3>Warehouse Operative - MusicMagpie</h3>
-            <p>Improved book dispatch processes, reducing errors by 20% and increasing efficiency by 15%.</p>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor's in Computer Engineering, Sigma Institute of Engineering (CGPA: 7.61)</p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:prem@duck.com">prem@duck.com</a></p>
-        <p>Phone: +44 79090 86250</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
     <footer>
